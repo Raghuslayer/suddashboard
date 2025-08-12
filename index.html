@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sudhir Prime Dashboard</title>
-    <!-- Tailwind CSS for utility classes --> 
+    <title>Raghu Prime Dashboard</title>
+    <!-- Tailwind CSS for utility classes -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Google Fonts for custom typography -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -474,6 +474,7 @@
                 <button class="tab px-4 py-2 whitespace-nowrap" data-tab="codingPath">Coding Path</button>
                 <button class="tab px-4 py-2 whitespace-nowrap" data-tab="neverDo">Never Do List <span class="progress-dot"></span></button>
                 <button class="tab px-4 py-2 whitespace-nowrap" data-tab="mustDo">Must Do List <span class="progress-dot"></span></button>
+                <button class="tab px-4 py-2 whitespace-nowrap" data-tab="mathematics">Mathematics</button> <!-- New Mathematics Tab -->
             </div>
         </nav>
         <!--------------------------------->
@@ -703,12 +704,12 @@
                 { title: 'My Ultimate Goal', description: 'My ultimate goal is to setup a startup in next 5years', thumbnail: 'https://placehold.co/600x400/121212/ff9d00?text=ULTIMATE+GOAL' },
             ],
             codingPath: [
-                { title: 'HTML', description: 'Master the structure of web pages.', thumbnail: 'https://placehold.co/600x400/121212/ff2a00?text=HTML' },
-                { title: 'CSS', description: 'Style your web applications.', thumbnail: 'https://placehold.co/600x400/121212/ff5e00?text=CSS' },
-                { title: 'JavaScript', description: 'Add interactivity to your websites.', thumbnail: 'https://placehold.co/600x400/121212/ff9d00?text=JAVASCRIPT' },
-                { title: 'MERN Stack', description: 'Build full-stack web applications.', thumbnail: 'https://placehold.co/600x400/121212/ff2a00?text=MERN+STACK' },
-                { title: 'C++', description: 'Dive deep into systems programming.', thumbnail: 'https://placehold.co/600x400/121212/ff5e00?text=C%2B%2B' },
-                { title: 'Data Structures & Algorithms', description: 'Enhance your problem-solving skills.', thumbnail: 'https://placehold.co/600x400/121212/ff9d00?text=DSA' },
+                { title: 'Learn Data Structures & Algorithms', description: 'Master fundamental DSA concepts.', thumbnail: 'https://placehold.co/600x400/121212/ff2a00?text=DSA' },
+                { title: 'Practice Competitive Programming', description: 'Solve problems on platforms like LeetCode/HackerRank.', thumbnail: 'https://placehold.co/600x400/121212/ff5e00?text=CP' },
+                { title: 'Build Web Development Projects', description: 'Create full-stack applications.', thumbnail: 'https://placehold.co/600x400/121212/ff9d00?text=WEB+DEV' },
+                { title: 'Contribute to Open Source', description: 'Collaborate on open-source projects.', thumbnail: 'https://placehold.co/600x400/121212/ff2a00?text=OPEN+SOURCE' },
+                { title: 'Learn a New Framework/Technology', description: 'Stay updated with new tools and frameworks.', thumbnail: 'https://placehold.co/600x400/121212/ff5e00?text=NEW+TECH' },
+                { title: 'Understand System Design Basics', description: 'Learn how large-scale systems are built.', thumbnail: 'https://placehold.co/600x400/121212/ff9d00?text=SYSTEM+DESIGN' },
             ],
             neverDo: [
                 { title: 'Early internships without skills', description: 'Focus on skill development first.', thumbnail: 'https://placehold.co/600x400/121212/ff2a00?text=NO+EARLY+INTERNSHIPS' },
@@ -745,6 +746,44 @@
                 { title: 'Focus on aptitude & LR', description: 'Crucial for competitive exams and problem-solving.', thumbnail: 'https://placehold.co/600x400/121212/ff2a00?text=APTITUDE+LR' },
                 { title: 'Learn English & communication', description: 'Enhance your global communication.', thumbnail: 'https://placehold.co/600x400/121212/ff5e00?text=LEARN+ENGLISH' },
                 { title: 'Maintain GitHub & LinkedIn actively', description: 'Keep your professional presence strong.', thumbnail: 'https://placehold.co/600x400/121212/ff9d00?text=ACTIVE+PROFILES' },
+            ],
+            // New Mathematics Tab Content
+            mathematics: [
+                {
+                    title: 'Core Programming Math',
+                    description: 'Arithmetic & Number Systems (binary, octal, hex, modular arithmetic), Algebra (equations, inequalities, factorization), Functions (domain, range, inverse, logs, exponentials).',
+                    thumbnail: 'https://placehold.co/600x400/121212/ff5e00?text=CORE+MATH'
+                },
+                {
+                    title: 'Discrete Mathematics (CSE essential)',
+                    description: 'Sets, Logic, Boolean algebra, Relations & Functions, Graph Theory (BFS, DFS, shortest path), Combinatorics (P&C, counting), Mathematical Induction.',
+                    thumbnail: 'https://placehold.co/600x400/121212/ff9d00?text=DISCRETE+MATH'
+                },
+                {
+                    title: 'Probability & Statistics (AI/ML)',
+                    description: 'Probability, Conditional probability, Bayes theorem, Distributions (Normal, Binomial, Poisson), Expectation, Variance, Correlation, Hypothesis Testing & Confidence Intervals.',
+                    thumbnail: 'https://placehold.co/600x400/121212/ff2a00?text=PROBABILITY+STATS'
+                },
+                {
+                    title: 'Linear Algebra (AI Backbone)',
+                    description: 'Vectors, Matrices (operations, dot/cross product), Eigenvalues, Eigenvectors, Matrix transformations.',
+                    thumbnail: 'https://placehold.co/600x400/121212/ff5e00?text=LINEAR+ALGEBRA'
+                },
+                {
+                    title: 'Calculus (AI Optimization)',
+                    description: 'Limits, Differentiation (gradient, partial derivatives, chain rule), Basic Integration, Vector calculus.',
+                    thumbnail: 'https://placehold.co/600x400/121212/ff9d00?text=CALCULUS'
+                },
+                {
+                    title: 'Optimization & Numerical Methods',
+                    description: 'Gradient descent, Approximation, Numerical equation solving.',
+                    thumbnail: 'https://placehold.co/600x400/121212/ff2a00?text=OPTIMIZATION'
+                },
+                {
+                    title: 'Competitive Programming Math (Bonus)',
+                    description: 'Modular exponentiation, GCD/LCM, Prime algorithms, Probability in algorithms.',
+                    thumbnail: 'https://placehold.co/600x400/121212/ff5e00?text=COMPETITIVE+MATH'
+                },
             ],
         };
 
@@ -887,6 +926,7 @@
             // Determine if the completion button should be shown.
             // It should only be shown for routine tiles that are not yet checked, and have video/context/details.
             // Adrenaline Vault videos should NOT show the completion button.
+            // Mathematics tab tiles should also NOT show the completion button as they are informational.
             const showCompletionButton = isRoutineTile && !isCurrentlyChecked && (tileData.videoUrl || tileData.contextItems || tileData.details);
 
             if (isRoutineTile) {
@@ -952,7 +992,7 @@
                     taskCheckSound.play(); // Play sound when task is checked
                 }
             } else {
-                // This is a non-routine tab (like 'vault', 'lesson', 'quote', 'goal', 'codingPath'), open a modal with the content (no check-in logic)
+                // This is a non-routine tab (like 'vault', 'lesson', 'quote', 'goal', 'codingPath', 'mathematics'), open a modal with the content (no check-in logic)
                 let modalHtml = '';
                 if (tileData.videoUrl) { // This case is for 'vault' tab videos or fetched YouTube videos
                     const isDirectVideo = tileData.videoUrl.endsWith('.mp4') || tileData.videoUrl.endsWith('.webm') || tileData.videoUrl.endsWith('.ogg');
@@ -976,7 +1016,7 @@
                 } else {
                     modalHtml = `<p class="text-lg opacity-90">${tileData.description}</p>`;
                 }
-                // For non-routine tabs, showCompletionButton is always false
+                // For non-routine tabs (including 'mathematics'), showCompletionButton is always false
                 openModal(tileData.title, modalHtml, false, clickedTabName, clickedIndex);
             }
         }
@@ -1018,9 +1058,10 @@
                 contentContainer.innerHTML = htmlContent;
 
                 // Set the correct grid layout for all tabs, or a single column for special tabs
-                if (['lesson', 'quote', 'goal', 'vault', 'codingPath'].includes(tabName)) {
+                // 'mathematics' tab should also use a multi-column grid as it has many tiles.
+                if (['lesson', 'quote', 'goal', 'vault'].includes(tabName)) { // These are single-tile tabs
                     contentContainer.className = 'w-full max-w-6xl content-container grid grid-cols-1 gap-8 fade-in';
-                } else {
+                } else { // All other tabs, including 'mathematics' and 'codingPath', use multi-column grid
                      contentContainer.className = 'w-full max-w-6xl content-container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 fade-in';
                 }
                 
@@ -1329,8 +1370,7 @@
                         videoUrl: videoUrl
                     };
                     await saveDailyContent(todayDate, contentType, newVideoData); // Save to Firestore
-                    console.log(`${contentType} video saved to Firestore:`, newVideoData);
-
+                    
                     tabContent[contentType] = [
                         { 
                             title: newVideoData.title, 
@@ -1458,4 +1498,3 @@
     </script>
 </body>
 </html>
-
